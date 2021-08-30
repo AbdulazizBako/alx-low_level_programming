@@ -12,20 +12,20 @@ int main(void)
 int a;
 int b;
 int c = 0;
-while (c <=9)
+while (c <= 9)
 {
 b = 0;
 while (b <= 9)
 {
 a = 0;
-while (a < 10)
+while (a <= 9)
 {
-if ((a != b) && (b != c) && (a > b) && (c > b))
+if (a != b && b != c && a > b && c < b)
 {
+putchar(c + 48);
 putchar(b + 48);
 putchar(a + 48);
-putchar(c + 48);
-if (b + a + c <= 24)
+if (b + a + c < 24)
 {
 putchar(',');
 putchar(' ');
