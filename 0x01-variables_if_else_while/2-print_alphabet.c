@@ -8,7 +8,12 @@
 
 int main(void)
 {
-char ch = 'L'
-putchar (ch.tolower())
+char ch = 'a';
+while (ch <= 'z')
+{
+putchar (ch);
+ch++;
+}
+putchar('\n');
 return (0);
 }
