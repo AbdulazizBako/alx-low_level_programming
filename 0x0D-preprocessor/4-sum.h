@@ -1,4 +1,6 @@
 #ifndef SARAI_H
 #define SARAI_H
-#define ABS(x) (((x) < 0) ? (-(x)) : (x))
+
+#define SUM(x,y) ((x) + (y))
+
 #endif /**SARAI_H*/
