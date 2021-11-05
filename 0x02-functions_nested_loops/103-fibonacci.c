@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - a fibonacci series of 50 numbers
+ * main - a fibonacci series sum numbers
  *
  * Return: Always returns 0.
  *
@@ -11,19 +11,18 @@ int main(void)
 int i, j, k, result;
 j = 0;
 k = 1;
-for (i = 0; i < 50; i++)
+for (i = 0; i < 4000000; i++)
 {
 result = j + k;
 j = k;
 k = result;
-printf("%d", result);
-if (i < 50 - 1)
+if ((result % 2) == 0)
 {
-putchar(',');
-putchar(' ');
+int ner;
+ner += result;
 }
 }
+printf("%d", result);
 putchar('\n');
 return (0);
 }
-
