@@ -8,21 +8,21 @@
  */
 int main(void)
 {
-int i, j, k, result;
+int j, k, result = 0, sum = 0;
 j = 0;
 k = 1;
-for (i = 0; i < 4000000; i++)
+while (result < 4000000)
 {
 result = j + k;
 j = k;
 k = result;
 if ((result % 2) == 0)
 {
-int ner;
-ner += result;
+sum += result;
 }
 }
-printf("%d", result);
+printf("%d", sum);
 putchar('\n');
 return (0);
 }
+

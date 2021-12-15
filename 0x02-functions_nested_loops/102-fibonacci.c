@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-int i, j, k, result;
+long int i, j, k, result;
 j = 0;
 k = 1;
 for (i = 0; i < 50; i++)
@@ -16,7 +16,7 @@ for (i = 0; i < 50; i++)
 result = j + k;
 j = k;
 k = result;
-printf("%d", result);
+printf("%ld", result);
 if (i < 50 - 1)
 {
 putchar(',');
