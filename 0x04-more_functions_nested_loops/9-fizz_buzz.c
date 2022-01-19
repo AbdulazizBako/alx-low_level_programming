@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - prints fizz, buzz and fizzBuzz
  *
  * Return: Always 0.
  *
  */
 
-int main (void)
+int main(void)
 {
-int i, n = 100;
-for (i = 1; i <= n; i++)
+int i;
+for (i = 1; i <= 100; i++)
 {
-if ((i % 3 == 0) && (i % 5 == 0))
+if ((i % 5 == 0) && (i % 3 == 0))
 {
 printf("FizzBuzz");
 }
@@ -28,7 +28,11 @@ else
 {
 printf("%d", i);
 }
+if (i != 100)
+{
 putchar(' ');
 }
+}
+putchar('\n');
 return (0);
 }

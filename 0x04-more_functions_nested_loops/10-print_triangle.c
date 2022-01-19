@@ -1,24 +1,23 @@
 #include "main.h"
 
 /**
- * print_triangle - a function that prints the shape of a rectangle
- *
- * @size: the recieving input
- *
- * Return: Always 0.
- *
+ * print_triangle - prints triangles
+ * @size: recieving input
+ * Return: void
  */
 
 void print_triangle(int size)
 {
 int i, j;
+
 if (size > 0)
 {
-for (i = 0; i < size; i++)
+
+for (i = 1; i <= size; i++)
 {
-for (j = 0; j < i; j--)
+for (j = 1; j <= size; j++)
 {
-if ((i + j) < size)
+if ((i + j) <= size)
 {
 _putchar(' ');
 }
